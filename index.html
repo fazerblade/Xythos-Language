@@ -1,0 +1,185 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+<meta charset="UTF-8">
+<meta name="viewport" content="width=device-width,initial-scale=1">
+<title>Xythos | Language Guide</title>
+<style>
+*{box-sizing:border-box}
+body{margin:0;background:#101010;color:#eee;font:14px Arial,sans-serif;line-height:1.7}
+header,main{max-width:780px;margin:auto;padding:22px}
+header{border-bottom:1px solid #333}
+h1{font-size:30px;margin:0}
+h2{font-size:19px;margin:0 0 10px}
+h3{font-size:14px;margin:16px 0 5px}
+p{color:#bbb;margin:7px 0}
+nav{display:flex;gap:16px;flex-wrap:wrap;margin-top:12px}
+a{color:#999;text-decoration:none}
+a:hover{color:white}
+section{padding:24px 0;border-bottom:1px solid #292929}
+.tag{color:#777;font-size:11px;letter-spacing:2px}
+.box{background:#191919;border:1px solid #292929;padding:14px;border-radius:8px;margin:12px 0}
+table{width:100%;border-collapse:collapse}
+th,td{text-align:left;padding:8px;border-bottom:1px solid #292929}
+th{color:#888;font-weight:normal}
+td:nth-child(2),td:nth-child(4){color:#ddd}
+code{background:#222;padding:2px 5px;border-radius:4px;color:#eee}
+.grid{display:grid;grid-template-columns:repeat(auto-fit,minmax(200px,1fr));gap:10px}
+footer{max-width:780px;margin:auto;padding:20px;color:#666}
+</style>
+</head>
+<body>
+
+<header>
+<div class="tag">Xythos Learning</div>
+<h1>Xythos</h1>
+<p>A custom written language built around letter forms, combinations, and spelling rules.</p>
+<nav>
+<a href="#about">About</a>
+<a href="#abc">Alphabet</a>
+<a href="#rules">Rules</a>
+<a href="#read">Reading</a>
+<a href="#examples">Examples</a>
+</nav>
+</header>
+
+<main>
+
+<section id="about">
+<div class="tag">01 / INTRODUCTION</div>
+<h2>What is Xythos?</h2>
+<p>Xythos is a constructed language designed for written communication and texting. Instead of writing with ordinary letter names and spellings, each letter is represented by its own form.</p>
+<p>When letters appear together, they may follow specific combination rules. This means that understanding Xythos involves learning both the individual letters and how they change when combined.</p>
+
+<div class="grid">
+<div class="box">
+<h3>Letter forms</h3>
+<p>Each letter has a corresponding written form, such as A = <code>'a</code> and B = <code>bh</code>.</p>
+</div>
+<div class="box">
+<h3>Combinations</h3>
+<p>Some adjacent letters combine into a different form, such as I + N = <code>ihn'te</code>.</p>
+</div>
+<div class="box">
+<h3>Spelling</h3>
+<p>Letter position and repeated letters can affect how a word is written.</p>
+</div>
+</div>
+</section>
+
+<section id="abc">
+<div class="tag">02 / ALPHABET</div>
+<h2>The Xythos alphabet</h2>
+<p>Use this table to look up the written form assigned to each English letter.</p>
+
+<table>
+<tr><th>Letter</th><th>Form</th><th>Letter</th><th>Form</th></tr>
+<tr><td>A</td><td>'a</td><td>N</td><td>n'te</td></tr>
+<tr><td>B</td><td>bh</td><td>O</td><td>ou</td></tr>
+<tr><td>C</td><td>ch</td><td>P</td><td>p</td></tr>
+<tr><td>D</td><td>da</td><td>Q</td><td>ql</td></tr>
+<tr><td>E</td><td>en</td><td>R</td><td>r</td></tr>
+<tr><td>F</td><td>f</td><td>S</td><td>sihn</td></tr>
+<tr><td>G</td><td>geh</td><td>T</td><td>te</td></tr>
+<tr><td>H</td><td>hst</td><td>U</td><td>un</td></tr>
+<tr><td>I</td><td>ihn</td><td>V</td><td>vh</td></tr>
+<tr><td>J</td><td>j</td><td>W</td><td>wh</td></tr>
+<tr><td>K</td><td>kah</td><td>X</td><td>xad</td></tr>
+<tr><td>L</td><td>li</td><td>Y</td><td>yeh</td></tr>
+<tr><td>M</td><td>m't</td><td>Z</td><td>z</td></tr>
+</table>
+
+<div class="box">
+<h3>Important: A at the beginning</h3>
+<p>The form for A normally appears as <code>'a</code>. When A starts a word, write it as <code>a'</code> instead.</p>
+</div>
+</section>
+
+<section id="rules">
+<div class="tag">03 / COMBINATION RULES</div>
+<h2>How letters combine</h2>
+<p>Some letter pairs have special combined forms. Apply the defined combination when the letters appear together.</p>
+
+<table>
+<tr><th>Pair</th><th>Combined form</th></tr>
+<tr><td>D + A</td><td>d'a</td></tr>
+<tr><td>G + H</td><td>gehst</td></tr>
+<tr><td>K + H</td><td>kahst</td></tr>
+<tr><td>L + I</td><td>lihn</td></tr>
+<tr><td>M + N</td><td>m'nte</td></tr>
+<tr><td>N + M</td><td>n'mt</td></tr>
+<tr><td>O + U</td><td>oun</td></tr>
+<tr><td>V + H</td><td>vhst</td></tr>
+<tr><td>T + E</td><td>ten</td></tr>
+<tr><td>W + H</td><td>whst</td></tr>
+<tr><td>Y + H</td><td>yehst</td></tr>
+<tr><td>X + D</td><td>xda</td></tr>
+<tr><td>S + N</td><td>sihn't</td></tr>
+<tr><td>Q + L</td><td>qli</td></tr>
+<tr><td>C + T</td><td>chst</td></tr>
+<tr><td>I + N</td><td>ihn'te</td></tr>
+<tr><td>I + T</td><td>ihnte</td></tr>
+<tr><td>N + T</td><td>n'tte</td></tr>
+</table>
+
+<div class="box">
+<h3>Order matters</h3>
+<p>Reversing a pair can produce a different form. For example, M + N = <code>m'nte</code>, while N + M = <code>n'mt</code>.</p>
+</div>
+
+<div class="box">
+<h3>Repeated letters</h3>
+<p>When the same letter appears twice, its form follows the doubling rule.</p>
+<p>A + A = <code>a'a</code></p>
+<p>B + B = <code>bbh</code></p>
+<p>C + C = <code>cch</code></p>
+</div>
+</section>
+
+<section id="read">
+<div class="tag">04 / READING GUIDE</div>
+<h2>How to read Xythos</h2>
+<p>Start by identifying the original letters. Then check whether any adjacent letters use a combination rule. Finally, apply spelling rules such as the special form of A at the beginning of a word.</p>
+
+<div class="box">
+<h3>Example: reading a word</h3>
+<p><code>Hstenlliou</code></p>
+<p>Hst · En · LLi · Ou</p>
+<p>H · E · L · L · O</p>
+<p>This example shows how groups of characters can represent individual letters.</p>
+</div>
+
+<div class="box">
+<h3>Watch the I combinations</h3>
+<p><code>ihn'te</code> represents the I + N combination.</p>
+<p><code>ihnte</code> represents the I + T combination.</p>
+<p>The apostrophe matters: these two forms must not be confused.</p>
+</div>
+</section>
+
+<section id="examples">
+<div class="tag">05 / EXAMPLES</div>
+<h2>Using Xythos</h2>
+<p>The following example introduces the language through a short message.</p>
+
+<div class="box">
+<p><code>hstenlliou, ihn a'm't Xyloto a'sihn ihn't "Xadyehliteou"</code></p>
+<p><code>ihn'te tehstihnsihn li'an'tegehun'agehen.</code></p>
+<p><code>hstouwh a'bhoute yehoun?<br>
+This Means:<br>
+Hello, I Am Xyloto As In "Xadyehliteou"<br>In This language.
+</code></p>
+</div>
+
+<h3>Learning tip</h3>
+<p>Learn the alphabet first, memorize common combinations next, and then practice reading complete words. Do not assume that every combination follows ordinary English spelling.</p>
+</section>
+
+</main>
+
+<footer>
+Xythos · Custom Language By @LastXyloto
+</footer>
+
+</body>
+</html>
